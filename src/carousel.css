@@ -1,0 +1,26 @@
+.carousel {
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.carousel.active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.cWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
