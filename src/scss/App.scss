@@ -1,0 +1,122 @@
+/* Customize your main colors in :root variables */
+:root {
+  --main-background-color: #343A50;
+  --card-background-color: #804980;
+  --countdown-background-color: #433765;
+  --main-text-color: #F7F6F4;
+  --title-text-color: #3CBA8B;
+}
+
+body {
+  background-color: #14003B;
+  /* background: url("img/main_back.jpg"); */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/main_back.jpg'); */
+  background-size: cover;
+  font-family: 'Rowdies';
+  font-size: 1.1em;
+}
+
+/**
+  header part
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+
+  .logo-part {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+  }
+
+  .section {
+    background-color: rgba(160, 73, 171, .22);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    border-radius: 10px;
+    border: 0px solid white;
+    min-height: 250px;
+    width: 80%;
+  }
+
+  div {
+    color: white;
+    font-family: 'Lilita One';
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  span {
+    color: #FF914D;
+    font-family: 'Rowdies';
+    font-weight: 900;
+  }
+
+  .nft-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nft {
+    img {
+      border-radius: 5px;
+      width: 120px;
+      border: 0px solid white;
+    }
+
+    button {
+      background-color: #A049AB;
+      border-radius: 5px;
+      height: 30px;
+      font-family: 'Rowdies';
+      font-size: 16px;
+      font-weight: 800;
+      width: 100px;
+      color: white;
+      border: 0px solid white;
+    }
+  }
+
+  .burn-btn {
+    height: 50px;
+    font-family: 'Rowdies';
+    font-size: 16px;
+    font-weight: 800;
+    width: 250px;
+    color: white;
+    border: 0px solid white;
+    background-color: #A049AB;
+    border-radius: 7px;
+    margin-top: 20px;
+  }
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF914D;
+  font-family: 'Rowdies';
+  font-weight: 800;
+  font-size: 12px;
+  margin-top: 150px;
+}

@@ -23,7 +23,8 @@ import {
     WalletModalProvider
 } from '@solana/wallet-adapter-react-ui';
 
-import "./App.scss";
+import "./scss/App.scss";
+import "./scss/Common.scss";
 import { DEFAULT_TIMEOUT } from './connection';
 import Home from "./Home";
 
@@ -48,15 +49,9 @@ const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
 
-// const connection = new anchor.web3.Connection(
-//     `https://api.mainnet-beta.solana.com`
-// );
-
 const connection = new anchor.web3.Connection(
     `https://nameless-hidden-lake.solana-mainnet.quiknode.pro/8f1131ad8d22d311c9b061736167c976a5b08ea0/`
 );
-
-
 
 const theme = createTheme({
     palette: {
@@ -85,7 +80,7 @@ const theme = createTheme({
 
 const App = () => {
     // Custom RPC endpoint.
-  const endpoint = useMemo(() => clusterApiUrl(network), []);
+    const endpoint = useMemo(() => clusterApiUrl(network), []);
 
     // @solana/wallet-adapter-wallets includes all the adapters but supports tree shaking and lazy loading --
     // Only the wallets you configure here will be compiled into your application, and only the dependencies
@@ -105,23 +100,23 @@ const App = () => {
         []
     );
 
-  return (
-      <ThemeProvider theme={theme}>
-        <ConnectionProvider endpoint={endpoint}>
-          <WalletProvider wallets={wallets} autoConnect={true}>
-            <WalletModalProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                connection={connection}
-                txTimeout={DEFAULT_TIMEOUT}
-                rpcHost={rpcHost}
-                network={network}
-              />
-            </WalletModalProvider>
-          </WalletProvider>
-        </ConnectionProvider>
-      </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <ConnectionProvider endpoint={endpoint}>
+                <WalletProvider wallets={wallets} autoConnect={true}>
+                    <WalletModalProvider>
+                        <Home
+                            candyMachineId={candyMachineId}
+                            connection={connection}
+                            txTimeout={DEFAULT_TIMEOUT}
+                            rpcHost={rpcHost}
+                            network={network}
+                        />
+                    </WalletModalProvider>
+                </WalletProvider>
+            </ConnectionProvider>
+        </ThemeProvider>
+    );
 };
 
 export default App;

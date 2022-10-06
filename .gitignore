@@ -11,6 +11,7 @@
 # production
 /build
 .build.zip
+/src/keypair1.json
 
 # misc
 .DS_Store
