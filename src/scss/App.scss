@@ -7,14 +7,21 @@
   --title-text-color: #3CBA8B;
 }
 
+@font-face {
+  font-family: Farro;
+  src: url("../img/Farro-Bold.ttf");
+}
+
 body {
   background-color: #14003B;
   /* background: url("img/main_back.jpg"); */
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/main_back.jpg'); */
   background-size: cover;
-  font-family: 'Rowdies';
+  font-family: Farro;
   font-size: 1.1em;
 }
+
+
 
 /**
   header part
@@ -54,14 +61,14 @@ body {
 
   div {
     color: white;
-    font-family: 'Lilita One';
+    font-family: Farro;
     font-size: 30px;
     font-weight: 900;
   }
 
   span {
     color: #FF914D;
-    font-family: 'Rowdies';
+    font-family: Farro;
     font-weight: 900;
   }
 
@@ -85,7 +92,7 @@ body {
       background-color: #A049AB;
       border-radius: 5px;
       height: 30px;
-      font-family: 'Rowdies';
+      font-family: Farro;
       font-size: 16px;
       font-weight: 800;
       width: 100px;
@@ -96,7 +103,7 @@ body {
 
   .burn-btn {
     height: 50px;
-    font-family: 'Rowdies';
+    font-family: Farro;
     font-size: 16px;
     font-weight: 800;
     width: 250px;
@@ -115,8 +122,12 @@ body {
   justify-content: center;
   align-items: center;
   color: #FF914D;
-  font-family: 'Rowdies';
+  font-family: Farro;
   font-weight: 800;
   font-size: 12px;
   margin-top: 150px;
+}
+
+.wallet-adapter-button {
+  font-family: Farro !important;
 }

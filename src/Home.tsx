@@ -391,13 +391,13 @@ const Home = (props: HomeProps) => {
                         <img src={Asset.smallLogo}></img>
                         <span className="f-28">NEST</span>
                         <span className="f-24">LIMITED</span>
-                        <span className="f-18">TURN YOUR NFTS TO WHITELIST TOKENS</span>
+                        <span className="f-18 mt-2">TURN YOUR NFTS TO WHITELIST TOKENS</span>
                     </div>
 
-                    <div className="section">
+                    <div className="section mt-2">
                         <div className="col f-center">
                             <div className="f-32">MY NFTS</div>
-                            <span className="f-12">MUST BURN 3 NFTS FOR 1 WL TOKEN</span>
+                            <span className="f-10 mt-1">MUST BURN 3 NFTS FOR 1 WL TOKEN</span>
                         </div>
                         <div className="nft-part">
                             {
@@ -407,7 +407,7 @@ const Home = (props: HomeProps) => {
                             }
                             {
                                 nftList?.length == 0 &&
-                                <span className="f-18">NO ELIGIBLE NFTS TO BURN</span>
+                                <span className="f-18 mt-3 mb-3">NO ELIGIBLE NFTS TO BURN</span>
                             }
                         </div>
                         <button className="burn-btn" onClick={() => { burn(); }}>BURN FOR (1) WL TOKEN</button>
