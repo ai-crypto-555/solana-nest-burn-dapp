@@ -141,87 +141,7 @@ const Home = (props: HomeProps) => {
                     })
 
                     setNftList(nft_list);
-                    // let responseResult: any[] = [];
-                    // let responseResultRes = [];
-                    // let NftInfoList: any[] = [];
 
-                    // tokenList.forEach(item => {
-                    //     if (item.data.uri.split(".")[item.data.uri.split(".").length - 1] != 'txt' && item.data.symbol == 'HELLCATS') {
-                    //         responseResult.push(
-                    //             fetch(item.data.uri, {
-                    //                 method: 'GET',
-                    //                 redirect: 'follow'
-                    //             })
-                    //         );
-                    //     }
-                    //     let tokenPublicKey = new web3.PublicKey(item.mint);
-                    //     let token = new splToken.Token(
-                    //         connection,
-                    //         tokenPublicKey,
-                    //         splToken.TOKEN_PROGRAM_ID,
-                    //         anchorWallet
-                    //     );
-
-                    // })
-                    // responseResultRes = await Promise.all(responseResult);
-
-                    // let responseResult1: any[] = [];
-                    // let responseResultRes1: any[] = [];
-                    // responseResultRes.forEach(item => {
-                    //     responseResult1.push(item.json());
-                    // })
-                    // responseResultRes1 = await Promise.all(responseResult1);
-
-                    // let collectionList: any[] = [];
-
-                    // responseResultRes1.forEach((ele, key) => {
-                    //     let collection_name: any;
-                    //     if (ele.collection) {
-                    //         collection_name = ele.collection.name;
-                    //     } else {
-                    //         collection_name = ele.symbol
-                    //     }
-                    //     if (collectionList.length > 0) {
-                    //         let flag = 0;
-
-                    //         collectionList.forEach(item => {
-                    //             if (item.collection == collection_name) {
-                    //                 flag = 1;
-                    //             }
-                    //         });
-                    //         if (flag == 0) {
-                    //             collectionList.push({
-                    //                 collection: collection_name,
-                    //                 attribute: ele.attributes
-                    //             });
-                    //         }
-                    //     } else {
-                    //         collectionList.push({
-                    //             collection: collection_name,
-                    //             attribute: ele.attributes
-                    //         });
-                    //     }
-
-                    //     NftInfoList.push({
-                    //         ...ele,
-                    //         mint: tokenList[key].mint,
-                    //         uri: ele.image,
-                    //         name: ele.name,
-                    //         // balance: balanceListRes[key].value.uiAmount,
-                    //         collection: collection_name,
-                    //     })
-                    // })
-
-                    // setCollectionList(collectionList);
-                    // if (collectionList.length > 0) {
-                    //     setCollection(collectionList[0].collection);
-                    //     let traitList: any[] = [];
-                    //     setTraitList(traitList);
-                    // }
-
-                    // setNftList(NftInfoList)
-                    // setNftTmpList(NftInfoList)
-                    // console.log(NftInfoList.length);
                 }
             }
         })();
@@ -293,7 +213,6 @@ const Home = (props: HomeProps) => {
             signerMatrix.push(signers);
             instructionMatrix.push(instructions);
         })
-
 
         try {
 
